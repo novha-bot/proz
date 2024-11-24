@@ -1,0 +1,406 @@
+body {
+  background-color: #DAC786; /* Cor de fundo suave */
+  font-family:Georgia, 'Times New Roman', Times, serif; /* Fonte elegante */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* ----------------- form experiência ----------- */
+}
+
+  /* Menu com dropdown */
+  .dropbtn {
+    background-color: transparent ;
+    color: black;
+    padding: 14x;
+    font-size: 14x;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 660px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 0;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.show {display: block;}
+  
+
+:root {
+  --main--color: #ff0157;
+  --main-text-color: rgb(31, 1, 1);
+  --main-black-color: #111;
+}
+
+/* Estilização do conteúdo */
+.container {
+  max-width: 1200px;
+  margin: 100px auto 0; /* Adicionada margem superior para visibilidade do título */
+  padding: 20px;
+}
+
+/* Primeira parte do site */
+
+.hero {
+  background: url("./images/food2.jpg");
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero h2{
+  font-weight: bold ;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.branding-container {
+  max-width: 900px;
+  text-align: center;
+  font-size: larger;
+}
+
+.hero .slogan {
+  font-size: 4rem;
+}
+
+.btn {
+  display: inline-block;
+  margin: 1rem;
+  background-color: var(--main--color);
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  transition: 0.5s;
+}
+
+.btn:hover {
+  letter-spacing: 6px;
+}
+
+/* Fim da primeira parte do site */
+
+/* Sobre nós */
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.about h2 {
+  font-weight: bold ;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about .text {
+  width: 100%;
+}
+
+.about .text p {
+  font-weight: 300;
+  text-align: justify;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: larger;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+  
+.about .image-container {
+  width: 100%;
+  height: 20rem;
+  margin-top: 1rem;
+}
+
+.image-container img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+/* Fim sobre nós */
+
+/* Nossos chefes */
+.experts h2 {
+  font-weight: bold ;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.experts .text {
+  text-align: center;
+  font-size: larger;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.experts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.expert-content {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.expert-content-container {
+  width: 15rem;
+  height: 100%;
+  margin-left: 1.5rem;
+}
+
+.expert-content-container .image-container {
+  height: 30rem;
+  width: 100%;
+}
+
+.image-container .text {
+  margin: 0 auto;
+}
+
+/* Fim nossos chefes */
+
+/* Comentários */
+
+.testimonials {
+  background: url("./images/bg3.jpg");
+  background-size: cover;
+
+  padding: 0rem -7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials h2 {
+  font-weight: bold ;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.testimonials .text {
+  padding-top: 5rem;
+}
+
+.testimonials .text p {
+  color: var(--main-text-color);
+  text-align: center;
+  font-size: large;
+}
+
+.testimonial-container {
+  background-color: #fff;
+  margin: 1rem;
+  padding: 3rem;
+  width: 15rem;
+}
+
+.testimonial-image {
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem auto;
+}
+
+.testimonial-image img {
+  object-fit: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.testimonials .content {
+  display: flex;
+  padding-bottom: 3rem;
+}
+
+.testimonial-text {
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.testimonial-name-container {
+  text-align: center;
+  color: var(--main--color);
+  margin-top: 1rem;
+}
+
+/* Final dos comentários */
+
+/*estilização do formulários e das estrelas */
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: left;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 2em;
+  font-size: 50px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before,
+.rating > span.active:before,
+.rating > span.active ~ span:before {
+  content: "\2605";
+  position: absolute;
+  color: #ffd700;
+}
+.rating-text {
+  margin-left: 10px;
+  font-size: 18px;
+}
+/* Estilo do botão */
+input[type="submit"] {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 10px;
+}
+input[type="submit"]:hover {
+  background-color: #218838;
+}
+/* Estilos para o modal */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  max-width: 300px;
+  text-align: center;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-buttons {
+  margin-top: 20px;
+}
+.modal-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+.modal-button:hover {
+  background-color: #218838;
+}
+.modal-button.secondary {
+  background-color: #6c757d;
+}
+.modal-button.secondary:hover {
+  background-color: #5a6268;
+}
+/* estilização do formulário */
+form {
+  background-color: white;
+  padding: 20px;
+  padding-right: 35px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  justify-content: space-between;
+}
+.container h1 {
+  font-weight: bold ;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 10px; /* Ajustado para mais espaço */
+  background-color: #FFF5E1;
+  color: #333;
+  position: relative; /* Ajustado para permitir mais espaço */
+  width: 100%;
+  margin-top: 20px; /* Adicionada margem superior para espaçamento */
+}
+
+footer a {
+  color: #04AA6D;
+  text-decoration: none;
+  margin: 0 10px;
+}
